@@ -1,4 +1,4 @@
-local repo = "https://raw.githubusercontent.com/TrilhaX/Main/main/Main"))()"
+local repo = "https://raw.githubusercontent.com/TrilhaX/TrilhaHubXy/main/Main"
 local function LoadScript(ScriptName)
 	pcall(function()
 		t = 0
@@ -25,7 +25,7 @@ local PlaceIds = {
 	['ADV'] = {8304191830},
 	['AFS'] = {6299805723},
 }
-elseif table.find(PlaceIds['AFSX(Normal)'], GameId) then -- AFSX
+if table.find(PlaceIds['AFSX(Normal)'], GameId) then -- AFSX
 	LoadScript("AFSX(NORMAL).lua")
 elseif table.find(PlaceIds['AFSX(Tournament)'], GameId) then -- AFSX
 	LoadScript("AFSX(TORNEIO).lua")
